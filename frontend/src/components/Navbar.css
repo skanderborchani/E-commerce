@@ -1,0 +1,84 @@
+.navbar{
+    width: 100%;
+    height: 110px;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    z-index: 50;
+}
+.navbarlogo h2{
+   color: #f4f4f4;
+   font-size: 1.4rem;
+   cursor: pointer;
+
+}
+.navbarlinks{
+    display:flex ;
+    list-style: none;
+    align-items: center;
+}
+.navbarlinks > li{
+    padding-left: 1.5rem;
+}
+.navbarlinks > li > a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.navbarlinks > li > a > span{
+    display: flex;
+    align-items: center;
+    margin: left 8px; ;
+}
+.cartlink{
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+.cartlink:hover{
+    background: #dd219d;
+    color: #f4f4f4;
+}
+.cartlogobadge{
+    width: 30px;
+    height: 30px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    margin-left: 8px;
+    color:#171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.menu > div{
+    width: 100%;
+    height: 3px;
+    background: #f4f4f4;
+}
+.menu:hover > div{
+    background: #dd219d;
+}
+@media(max-width:960px){
+    .navbarlinks{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+}
+

@@ -1,0 +1,33 @@
+.cartiteam{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    gap:8px;
+    background: #fff;
+    border-radius: 2px;
+    place-items: center;
+}
+.cartiteam_name{
+    text-decoration: none;
+    color: #171717;
+}
+.cartiteam_name:hover{
+    color: #dd219e; 
+}
+.cartiteam_select{
+    padding: 10px 17px;
+}
+.cartiteam_deletebtn{
+    padding: 10px;
+    color: red;
+    background: #f4f4f4f4;
+    border: 1px solid #171717;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.cartiteam_deletebtn:hover , .cartiteam_deletebtn:focus , .cartiteam_deletebtn:active {
+    background: #171717;
+    transform: scale(1,2);
+}
